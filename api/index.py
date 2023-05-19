@@ -3,7 +3,7 @@ import pandas as pd
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
-model = joblib.load('./models/model.joblib')
+model = joblib.load('../models/model.joblib')
 
 # set cors to allow all origins
 from flask_cors import CORS
